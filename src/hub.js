@@ -1416,11 +1416,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   linkChannel.setSocket(socket);
 
   //onBoard
+console.log("Instantiating onboard stage sys!");
 
   // 1.) Import (at begining of file)
 
   // 2.) Instantiation of the class in a global variable allocated to the window object
   window.stgSys = new stgSysClass(hubChannel);
+
+console.log("Initializing onboard stage sys!");
 
   // 3.) Initialisation of the class
   window.stgSys.init();
